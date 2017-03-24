@@ -1,5 +1,7 @@
 #!/bin/bash
 
+COCKROACH_CERTS=~/cockroach/certs
+
 # Stop node 1:
 cockroach quit \
 --host=localhost \
