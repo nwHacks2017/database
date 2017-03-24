@@ -1,42 +1,43 @@
 #!/bin/bash
 
-# Create a certs directory:
-mkdir /home/ec2-user/certs
+CERTS_DIR=~/cockroach/certs
+
+mkdir -p ${CERTS_DIR}
 
 # Create the CA key pair:
 cockroach cert create-ca \
---ca-cert=/home/ec2-user/certs/ca.cert \
---ca-key=/home/ec2-user/certs/ca.key
+--ca-cert=${CERTS_DIR}/ca.cert \
+--ca-key=${CERTS_DIR}/ca.key
 
 # Create a client key pair for the root user:
 cockroach cert create-client \
 root \
---ca-cert=/home/ec2-user/certs/ca.cert \
---ca-key=/home/ec2-user/certs/ca.key \
---cert=/home/ec2-user/certs/root.cert \
---key=/home/ec2-user/certs/root.key
+--ca-cert=${CERTS_DIR}/ca.cert \
+--ca-key=${CERTS_DIR}/ca.key \
+--cert=${CERTS_DIR}/root.cert \
+--key=${CERTS_DIR}/root.key
 
 # Create a client key pair for the dev user:
 cockroach cert create-client \
 janitor_dev \
---ca-cert=/home/ec2-user/certs/ca.cert \
---ca-key=/home/ec2-user/certs/ca.key \
---cert=/home/ec2-user/certs/janitor_dev.cert \
---key=/home/ec2-user/certs/janitor_dev.key
+--ca-cert=${CERTS_DIR}/ca.cert \
+--ca-key=${CERTS_DIR}/ca.key \
+--cert=${CERTS_DIR}/janitor_dev.cert \
+--key=${CERTS_DIR}/janitor_dev.key
 
 # Create a client key pair for the prod user:
 cockroach cert create-client \
 janitor \
---ca-cert=/home/ec2-user/certs/ca.cert \
---ca-key=/home/ec2-user/certs/ca.key \
---cert=/home/ec2-user/certs/janitor.cert \
---key=/home/ec2-user/certs/janitor.key
+--ca-cert=${CERTS_DIR}/ca.cert \
+--ca-key=${CERTS_DIR}/ca.key \
+--cert=${CERTS_DIR}/janitor.cert \
+--key=${CERTS_DIR}/janitor.key
 
 # Create a key pair for the nodes:
 cockroach cert create-node \
 localhost \
 $(hostname) \
---ca-cert=/home/ec2-user/certs/ca.cert \
---ca-key=/home/ec2-user/certs/ca.key \
---cert=/home/ec2-user/certs/node.cert \
---key=/home/ec2-user/certs/node.key
+--ca-cert=${CERTS_DIR}/ca.cert \
+--ca-key=${CERTS_DIR}/ca.key \
+--cert=${CERTS_DIR}/node.cert \
+--key=${CERTS_DIR}/node.key
