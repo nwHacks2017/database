@@ -3,6 +3,5 @@ CREATE TABLE NWHACKS.patients (
 	name varchar(255),
 	dob date,
 	gender smallint,
-	address varchar(512),
-	PRIMARY KEY (id)
-) 
+	address varchar(512)
+);

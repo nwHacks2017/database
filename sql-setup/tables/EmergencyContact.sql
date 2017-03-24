@@ -3,4 +3,4 @@ CREATE TABLE NWHACKS.emergency_contacts (
 	pid varchar(255) REFERENCES NWHACKS.patients(id),
 	name varchar(255),
 	phone varchar(40)
-) 
+);

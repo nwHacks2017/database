@@ -3,4 +3,4 @@ CREATE TABLE NWHACKS.patient_healthcare (
 	pid varchar(255) REFERENCES NWHACKS.patients(id),
 	hid varchar(255) REFERENCES NWHACKS.healthcare(id),
 	expiry_date date 
-) 
+);
