@@ -1,1 +1,8 @@
 *._*
+
+# CockroachDB data stores
+cockroach-data/
+node*/
+
+# Temporary files
+*~
