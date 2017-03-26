@@ -1,8 +1,9 @@
-*._*
-
 # CockroachDB data stores
 cockroach-data/
 node*/
+
+# Mac files
+*._*
 
 # Temporary files
 *~
