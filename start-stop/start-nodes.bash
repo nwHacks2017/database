@@ -1,5 +1,7 @@
 #!/bin/bash
 
+COCKROACH_CERTS=~/cockroach/certs
+
 echo "Starting node 1"
 cockroach start --background \
 --http-host=0.0.0.0 \
