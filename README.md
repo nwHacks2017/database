@@ -18,6 +18,11 @@ Start up the 3 database nodes on ports 26257, 26258, and 26259:
 ./start-stop/start-nodes.bash
 ```
 
+When you want to shut down the nodes, run:
+```
+./start-stop/stop-nodes.bash
+```
+
 ## Usage
 
 To open the database shell and execute CockroachDB-compliant SQL commands (using the generated certificates), run:
