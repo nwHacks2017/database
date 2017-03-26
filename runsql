@@ -1,0 +1,16 @@
+#!/bin/bash
+
+COCKROACH_CERTS=~/cockroach/certs
+
+if [ "$#" -eq 1 ]; then
+  cockroach sql \
+  --ca-cert=$COCKROACH_CERTS/ca.cert \
+  --cert=$COCKROACH_CERTS/root.cert \
+  --key=$COCKROACH_CERTS/root.key \
+  < $1
+else
+  cockroach sql \
+  --ca-cert=$COCKROACH_CERTS/ca.cert \
+  --cert=$COCKROACH_CERTS/root.cert \
+  --key=$COCKROACH_CERTS/root.key		
+fi
