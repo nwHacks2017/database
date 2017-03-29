@@ -1,0 +1,5 @@
+INSERT INTO NWHACKS.healthcare VALUES (
+	'JALMKL!KMLVM<180928390',
+	'Stupid Hospital',
+	'604-123-4567'
+);
