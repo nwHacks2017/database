@@ -2,9 +2,9 @@
 
 cd $(dirname $0)
 
-../runsql < sql/DbUsers.sql
+../runsql < sql-setup/DbUsers.sql
 
-../runsql < sql/Patient.sql
-../runsql < sql/Healthcare.sql
-../runsql < sql/PatientHealthcare.sql
-../runsql < sql/EmergencyContact.sql
+../runsql < sql-setup/Patient.sql
+../runsql < sql-setup/Healthcare.sql
+../runsql < sql-setup/PatientHealthcare.sql
+../runsql < sql-setup/EmergencyContact.sql

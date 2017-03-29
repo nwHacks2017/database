@@ -2,4 +2,4 @@
 
 cd $(dirname $0)
 
-../runsql < sql/DropTables.sql
+../runsql < sql-teardown/DropTables.sql
