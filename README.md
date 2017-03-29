@@ -10,7 +10,7 @@ Install [CockroachDB](https://www.cockroachlabs.com/).
 
 Create encryption certificates for secure access to the database:
 ```
-./setup/certs.bash
+./setup-teardown/setup-certs.bash
 ```
 
 Start up the 3 database nodes on ports 26257, 26258, and 26259:
