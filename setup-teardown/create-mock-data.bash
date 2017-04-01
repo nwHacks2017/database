@@ -1,4 +1,6 @@
 #!/bin/bash
+#
+# This Bash script adds mock patient data to the CockroachDB database.
 
 cd $(dirname $0)
 

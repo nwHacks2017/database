@@ -1,4 +1,6 @@
 #!/bin/bash
+#
+# This Bash script generates certificates for CockroachDB before initialization.
 
 CERTS_DIR=~/cockroach/certs
 

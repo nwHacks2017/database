@@ -1,4 +1,6 @@
 #!/bin/bash
+#
+# This Bash script generates the database users and tables for CockroachDB.
 
 cd $(dirname $0)
 
