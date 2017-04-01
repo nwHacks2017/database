@@ -1,4 +1,12 @@
 #!/bin/bash
+#
+# This Bash script starts up CockroachDB on 3 nodes (ports 26257, 26258,
+# and 26259).
+#
+# Usage: ./start-nodes.bash
+#
+# Certificates must be created beforehand by the script setup-certs.bash,
+# And are used for secure authentication.
 
 COCKROACH_DIR=~/cockroach
 mkdir -p ${COCKROACH_DIR}

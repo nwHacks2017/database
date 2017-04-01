@@ -1,4 +1,9 @@
 #!/bin/bash
+#
+# This Bash script stops 3 instances of CockroachDB (on ports 26257, 26258,
+# and 26259).
+#
+# Usage: ./stop-nodes.bash
 
 COCKROACH_CERTS=~/cockroach/certs
 

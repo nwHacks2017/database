@@ -1,4 +1,10 @@
 #!/bin/bash
+#
+# This Bash script opens the command line SQL shell for CockroachDB using the
+# root certificates.
+#
+# Usage: ./runsql [filename]
+#   filename: Path to a file with SQL commands to execute
 
 COCKROACH_CERTS=~/cockroach/certs
 
