@@ -39,6 +39,10 @@ $ ./runsql test.sql
 username
 ```
 
+To connect the database to an application, use:
+* The user `janitor_dev` with the SSL cert `~/cockroach/certs/janitor_dev.cert` and the SSL key `~/cockroach/certs/janitor_dev.key` (for the development environment), or
+* The user `janitor` with the SSL cert `~/cockroach/certs/janitor.cert` and the SSL key `~/cockroach/certs/janitor.key` (for the production environment)
+
 ## Teardown
 
 If you want to remove the tables, make sure the nodes are running and execute:
