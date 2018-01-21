@@ -1,5 +1,7 @@
 # Luminescence: Lifeband Database (nwhacks 2017)
 
+[![License](https://img.shields.io/github/license/mashape/apistatus.svg)](https://github.com/nwHacks2017/database/blob/master/LICENCE)
+
 CockroachDB triple-node database for storing medical patient information.
 
 This repository contains the setup, configuration, and scripts to automate operation and usage of the database for the Lifeband project.
