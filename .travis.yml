@@ -1,0 +1,16 @@
+install:
+  - wget -qO- https://binaries.cockroachdb.com/cockroach-v1.1.4.linux-amd64.tgz | tar xvz
+  - cp -i cockroach-v1.1.4.linux-amd64/cockroach /usr/local/bin
+  - ./setup-teardown/setup-certs.bash
+
+script:
+  - ./start-stop/start-nodes.bash
+  - ./setup-teardown/setup-database.bash
+  - ./setup-teardown/create-mock-data.bash
+  - echo "SHOW USERS;" > test.sql
+  - ./runsql test.sql
+
+after_script:
+  - ./setup-teardown/teardown-tables.bash
+  - ./start-stop/stop-nodes.bash
+  - ./setup-teardown/teardown-nodes-and-certs.bash
