@@ -9,9 +9,7 @@
 COCKROACH_CERTS=~/cockroach/certs
 
 COMMAND="cockroach sql
---ca-cert=$COCKROACH_CERTS/ca.cert
---cert=$COCKROACH_CERTS/root.cert
---key=$COCKROACH_CERTS/root.key"
+--certs-dir=$COCKROACH_CERTS"
 
 if [ "$#" -gt 0 ]; then
   eval ${COMMAND} < $1
