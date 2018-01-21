@@ -1,6 +1,6 @@
 install:
   - wget -qO- https://binaries.cockroachdb.com/cockroach-v1.1.4.linux-amd64.tgz | tar xvz
-  - cp -i cockroach-v1.1.4.linux-amd64/cockroach /usr/local/bin
+  - sudo cp -i cockroach-v1.1.4.linux-amd64/cockroach /usr/local/bin
   - ./setup-teardown/setup-certs.bash
 
 script:
