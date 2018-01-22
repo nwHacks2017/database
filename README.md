@@ -1,4 +1,6 @@
-# Luminescence: Lifeband Database (nwhacks 2017)
+# <img src="./img/icon.png" width="40"> LifeBand (nwHacks 2017): Database
+
+## By Luminescence
 
 [![Build Status](https://travis-ci.org/nwHacks2017/database.svg?branch=master)](https://travis-ci.org/nwHacks2017/database)
 [![License](https://img.shields.io/github/license/mashape/apistatus.svg)](https://github.com/nwHacks2017/database/blob/master/LICENCE)
